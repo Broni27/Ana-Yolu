@@ -121,7 +121,7 @@ const Header = () => {
             >
               <Globe className="w-5 h-5 text-gold-500" />
               <span className="text-xs font-medium text-gold-500">
-                {i18n.language.toUpperCase()}
+                {i18n.language === 'az' ? 'EN' : 'AZ'}
               </span>
             </button>
 

@@ -15,6 +15,7 @@ const LanguageSwitcher = () => {
       whileTap={{ scale: 0.95 }}
       onClick={toggleLanguage}
       className="flex items-center space-x-2 px-4 py-2 rounded-full border-2 border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-black transition-all duration-300"
+      title={i18n.language === 'az' ? 'Switch to English' : 'Azərbaycan dilinə keç'}
     >
       <Globe className="w-4 h-4" />
       <span className="text-sm font-medium">
