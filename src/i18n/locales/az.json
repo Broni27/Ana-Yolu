@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "home": "Əsas səhifə",
+    "team": "Komandamız",
+    "services": "Xidmətlər",
+    "about": "Haqqımızda"
+  },
+  "home": {
+    "title": "Ana Yolu Klinikası",
+    "subtitle": "Azərbaycanda ilk IVF klinikası",
+    "description": "Biz sizin ailənizi yaratmaq arzunuzu gerçəyə çevirmək üçün buradayıq. Müasir texnologiyalar və peşəkar komanda ilə sizə xidmət edirik.",
+    "cta": "Məsləhət alın",
+    "learn_more": "Ətraflı"
+  },
+  "team": {
+    "title": "Komandamız",
+    "subtitle": "Peşəkar həkimlərimiz",
+    "description": "Yüksək ixtisaslı və təcrübəli mütəxəssislərimiz sizə ən yaxşı xidməti təqdim etmək üçün buradayıq."
+  },
+  "services": {
+    "title": "Xidmətlərimiz",
+    "subtitle": "Təklif etdiyimiz müalicələr",
+    "description": "Biz ən müasir IVF texnologiyalarını və müalicə metodlarını təklif edirik."
+  },
+  "about": {
+    "title": "Haqqımızda",
+    "subtitle": "Azərbaycanda ilk IVF klinikası",
+    "description": "Ana Yolu Klinikası Azərbaycanda reproduktiv təbabət sahəsində ilk və aparıcı klinikadır. Biz minlərlə ailənin xoşbəxt olmalarına kömək etmişik.",
+    "mission_title": "Missiyamız",
+    "mission_text": "Hər ailənin uşaq sahibi olma xoşbəxtliyini yaşaması üçün ən yüksək keyfiyyətli və peşəkar xidmət göstərmək.",
+    "vision_title": "Vizyonumuz",
+    "vision_text": "Regionun aparıcı reproduktiv təbabət mərkəzi olmaq və beynəlxalq standartlara cavab vermək."
+  },
+  "footer": {
+    "rights": "Bütün hüquqlar qorunur",
+    "contact": "Əlaqə",
+    "address": "Ünvan",
+    "phone": "Telefon",
+    "email": "E-poçt"
+  },
+  "theme": {
+    "light": "İşıqlı",
+    "dark": "Qaranlıq"
+  }
+}
+
