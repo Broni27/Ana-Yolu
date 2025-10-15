@@ -56,7 +56,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || isOpen
           ? 'bg-white/90 dark:bg-black/90 backdrop-blur-lg shadow-lg'
           : 'bg-transparent'
       }`}
@@ -67,12 +67,12 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3 group">
             <img
               src="/logo.png"
-              alt="Ana Yolu Clinic"
+              alt="Genesis Clinic"
               className="h-12 w-12 object-contain transition-transform duration-500 group-hover:scale-110 group-hover:rotate-[360deg]"
             />
             <div className="hidden sm:block">
               <h1 className="text-xl font-display font-bold text-gradient">
-                Ana Yolu
+                Genesis
               </h1>
               <p className="text-xs text-gray-600 dark:text-gray-400">
                 {t('home.subtitle')}

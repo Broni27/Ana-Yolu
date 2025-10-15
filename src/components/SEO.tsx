@@ -19,8 +19,8 @@ const SEO = ({
   const { t, i18n } = useTranslation();
   
   const siteTitle = title 
-    ? `${title} | Ana Yolu Clinic` 
-    : 'Ana Yolu Clinic - Azerbaijan\'s First IVF Clinic';
+    ? `${title} | Genesis Clinic` 
+    : 'Genesis Clinic - Azerbaijan\'s First IVF Clinic';
   
   const siteDescription = description || t('home.description');
 
@@ -50,7 +50,7 @@ const SEO = ({
       
       {/* Additional Meta Tags */}
       <meta name="robots" content="index, follow" />
-      <meta name="author" content="Ana Yolu Clinic" />
+      <meta name="author" content="Genesis Clinic" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       

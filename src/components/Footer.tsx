@@ -19,12 +19,12 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <img
                 src="/logo.png"
-                alt="Ana Yolu Clinic"
+                alt="Genesis Clinic"
                 className="h-12 w-12 object-contain"
               />
               <div>
                 <h3 className="text-xl font-display font-bold text-gradient">
-                  Ana Yolu
+                  Genesis
                 </h3>
                 <p className="text-xs text-gray-400">{t('home.subtitle')}</p>
               </div>
@@ -107,7 +107,7 @@ const Footer = () => {
           className="mt-8 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between"
         >
           <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} Ana Yolu Clinic. {t('footer.rights')}.
+            © {new Date().getFullYear()} Genesis Clinic. {t('footer.rights')}.
           </p>
           <div className="flex items-center space-x-1 mt-4 sm:mt-0">
             <span className="text-sm text-gray-400">Made with</span>

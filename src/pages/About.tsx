@@ -38,7 +38,7 @@ const About = () => {
       <SEO 
         title={t('about.title')}
         description={t('about.description')}
-        keywords="about Ana Yolu, first IVF clinic Azerbaijan, reproductive medicine center"
+        keywords="about Genesis, first IVF clinic Azerbaijan, reproductive medicine center"
       />
       <ParticlesBackground />
 
@@ -161,7 +161,7 @@ const About = () => {
           <h2 className="heading-2 text-center mb-12">Our Journey</h2>
           <div className="max-w-3xl mx-auto">
             {[
-              { year: '2010', title: 'Founded', desc: 'Ana Yolu Clinic was established as Azerbaijan\'s first IVF clinic' },
+              { year: '2010', title: 'Founded', desc: 'Genesis Clinic was established as Azerbaijan\'s first IVF clinic' },
               { year: '2015', title: 'Expansion', desc: 'Opened state-of-the-art laboratory facilities' },
               { year: '2020', title: 'Innovation', desc: 'Introduced advanced genetic testing services' },
               { year: '2025', title: 'Leadership', desc: 'Recognized as the leading reproductive center in the region' },

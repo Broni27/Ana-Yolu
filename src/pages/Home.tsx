@@ -50,7 +50,7 @@ const Home = () => {
       <SEO 
         title={t('home.title')}
         description={t('home.description')}
-        keywords="IVF, fertility treatment, Azerbaijan, Ana Yolu, reproductive medicine, infertility"
+        keywords="IVF, fertility treatment, Azerbaijan, Genesis, reproductive medicine, infertility"
       />
       <Background3D />
       
@@ -60,7 +60,7 @@ const Home = () => {
           <div className="mb-6 fade-in">
             <img
               src="/logo.png"
-              alt="Ana Yolu Clinic"
+              alt="Genesis Clinic"
               className="w-32 h-32 mx-auto object-contain animate-float"
             />
           </div>
