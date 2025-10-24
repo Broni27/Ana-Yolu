@@ -7,6 +7,7 @@ import { useTheme } from '@/contexts/ThemeContext';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [logoRotation, setLogoRotation] = useState(0);
   const { t, i18n } = useTranslation();
   const { theme, toggleTheme } = useTheme();
   const location = useLocation();
@@ -64,11 +65,16 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
+          <Link 
+            to="/" 
+            className="flex items-center space-x-3 group"
+            onMouseEnter={() => setLogoRotation(prev => prev + 360)}
+          >
             <img
               src="/logo.png"
               alt="Genesis Clinic"
-              className="h-12 w-12 object-contain transition-transform duration-500 group-hover:scale-110 group-hover:rotate-[360deg]"
+              className="h-12 w-12 object-contain transition-transform duration-500 group-hover:scale-110"
+              style={{ transform: `rotate(${logoRotation}deg)` }}
             />
             <div className="hidden sm:block">
               <h1 className="text-xl font-display font-bold text-gradient">
