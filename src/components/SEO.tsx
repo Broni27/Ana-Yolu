@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
+import defaultLogo from '@/assets/logo.png';
 
 interface SEOProps {
   title?: string;
@@ -13,7 +14,7 @@ const SEO = ({
   title, 
   description, 
   keywords = 'IVF, fertility, Azerbaijan, clinic, reproductive medicine',
-  image = '/logo.png',
+  image = defaultLogo,
   url = window.location.href
 }: SEOProps) => {
   const { t, i18n } = useTranslation();

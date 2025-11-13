@@ -10,17 +10,176 @@
     "subtitle": "Azerbaijan's First IVF Clinic",
     "description": "We are here to make your dream of creating a family come true. We serve you with modern technologies and a professional team.",
     "cta": "Get Consultation",
-    "learn_more": "Learn More"
+    "learn_more": "Learn More",
+    "seo": {
+      "keywords": "IVF, fertility treatment, Azerbaijan, Genesis, reproductive medicine, infertility"
+    },
+    "features": {
+      "technology": {
+        "title": "Modern Technology",
+        "description": "State-of-the-art IVF technology and equipment"
+      },
+      "care": {
+        "title": "Personalized Care",
+        "description": "Tailored support for every patient"
+      },
+      "experts": {
+        "title": "Expert Team",
+        "description": "Highly qualified fertility specialists"
+      }
+    },
+    "cta_section": {
+      "title": "Ready to Start Your Journey?",
+      "description": "Take the first step towards building your family with Azerbaijan's leading IVF clinic.",
+      "button": "Schedule a Consultation"
+    }
   },
   "team": {
     "title": "Our Team",
     "subtitle": "Our Professional Doctors",
-    "description": "Our highly qualified and experienced specialists are here to provide you with the best service."
+    "description": "Our highly qualified and experienced specialists are here to provide you with the best service.",
+    "seo": {
+      "keywords": "IVF doctors, fertility specialists, reproductive endocrinologists, Azerbaijan"
+    },
+    "members": {
+      "lead": {
+        "name": "Dr. [Name]",
+        "role": "Chief Reproductive Endocrinologist",
+        "experience": "15+ years of experience",
+        "specialization": "IVF & Reproductive Medicine"
+      },
+      "embryologist": {
+        "name": "Dr. [Name]",
+        "role": "Senior Embryologist",
+        "experience": "12+ years of experience",
+        "specialization": "Embryology & Laboratory"
+      },
+      "fertility": {
+        "name": "Dr. [Name]",
+        "role": "Fertility Specialist",
+        "experience": "10+ years of experience",
+        "specialization": "Female Infertility"
+      },
+      "andrologist": {
+        "name": "Dr. [Name]",
+        "role": "Andrologist",
+        "experience": "8+ years of experience",
+        "specialization": "Male Infertility"
+      }
+    },
+    "cta": {
+      "title": "Join Our Team",
+      "description": "We're always looking for talented professionals to join our mission of helping families grow.",
+      "button": "View Open Positions"
+    }
   },
   "services": {
     "title": "Our Services",
     "subtitle": "Treatments We Offer",
-    "description": "We offer the most advanced IVF technologies and treatment methods."
+    "description": "We offer the most advanced IVF technologies and treatment methods.",
+    "seo": {
+      "keywords": "IVF treatment, ICSI, egg freezing, sperm freezing, genetic testing, fertility services"
+    },
+    "items": {
+      "ivf": {
+        "title": "In Vitro Fertilization (IVF)",
+        "description": "Advanced IVF treatment with the latest technology and highest success rates",
+        "features": [
+          "ICSI",
+          "Embryo Transfer",
+          "Blastocyst Culture"
+        ]
+      },
+      "pgt": {
+        "title": "Preimplantation Genetic Testing",
+        "description": "Comprehensive genetic screening for healthy embryos",
+        "features": [
+          "PGT-A",
+          "PGT-M",
+          "PGT-SR"
+        ]
+      },
+      "freezing": {
+        "title": "Egg & Sperm Freezing",
+        "description": "Fertility preservation for your future family planning",
+        "features": [
+          "Vitrification",
+          "Long-term Storage",
+          "High Success Rate"
+        ]
+      },
+      "assessment": {
+        "title": "Fertility Assessment",
+        "description": "Comprehensive evaluation of reproductive health",
+        "features": [
+          "Hormone Testing",
+          "Ultrasound",
+          "Semen Analysis"
+        ]
+      },
+      "male": {
+        "title": "Male Infertility Treatment",
+        "description": "Specialized treatment for male factor infertility",
+        "features": [
+          "TESE",
+          "MESA",
+          "Sperm Selection"
+        ]
+      },
+      "ovulation": {
+        "title": "Ovulation Induction",
+        "description": "Controlled ovarian stimulation protocols",
+        "features": [
+          "IUI",
+          "Timed Intercourse",
+          "Monitoring"
+        ]
+      },
+      "donor": {
+        "title": "Donor Programs",
+        "description": "Egg and sperm donor services",
+        "features": [
+          "Donor Screening",
+          "Anonymous Donation",
+          "Legal Support"
+        ]
+      },
+      "endometrial": {
+        "title": "Endometrial Receptivity",
+        "description": "Optimizing uterine lining for implantation",
+        "features": [
+          "ERA Test",
+          "Endometrial Scratch",
+          "Mock Cycle"
+        ]
+      }
+    },
+    "process": {
+      "title": "Our Treatment Process",
+      "steps": [
+        {
+          "title": "Initial Consultation",
+          "description": "Meet with our specialists"
+        },
+        {
+          "title": "Testing & Diagnosis",
+          "description": "Comprehensive evaluation"
+        },
+        {
+          "title": "Treatment Plan",
+          "description": "Personalized protocol"
+        },
+        {
+          "title": "Follow-up Care",
+          "description": "Continuous support"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Start Your Journey Today",
+      "description": "Schedule a consultation to learn more about our services and how we can help you achieve your dream of parenthood.",
+      "button": "Book Appointment"
+    }
   },
   "about": {
     "title": "About Us",
@@ -29,14 +188,76 @@
     "mission_title": "Our Mission",
     "mission_text": "To provide the highest quality and professional service for every family to experience the joy of having children.",
     "vision_title": "Our Vision",
-    "vision_text": "To be the region's leading reproductive medicine center and meet international standards."
+    "vision_text": "To be the region's leading reproductive medicine center and meet international standards.",
+    "seo": {
+      "keywords": "about Genesis, first IVF clinic Azerbaijan, reproductive medicine center"
+    },
+    "stats": {
+      "families": "Happy Families",
+      "experience": "Years Experience",
+      "success": "Success Rate",
+      "procedures": "Procedures Performed"
+    },
+    "values": {
+      "title": "Our Core Values",
+      "excellence": {
+        "title": "Excellence",
+        "description": "We maintain the highest standards in reproductive medicine"
+      },
+      "compassion": {
+        "title": "Compassion",
+        "description": "We understand the emotional journey and provide empathetic care"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We continuously adopt the latest technologies and techniques"
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "We operate with transparency and ethical principles"
+      }
+    },
+    "timeline": {
+      "title": "Our Journey",
+      "entries": [
+        {
+          "title": "Founded",
+          "description": "Genesis Clinic was established as Azerbaijan's first IVF clinic"
+        },
+        {
+          "title": "Expansion",
+          "description": "Opened state-of-the-art laboratory facilities"
+        },
+        {
+          "title": "Innovation",
+          "description": "Introduced advanced genetic testing services"
+        },
+        {
+          "title": "Leadership",
+          "description": "Recognized as the leading reproductive center in the region"
+        }
+      ]
+    }
   },
   "footer": {
     "rights": "All rights reserved",
     "contact": "Contact",
     "address": "Address",
     "phone": "Phone",
-    "email": "Email"
+    "email": "Email",
+    "hours": {
+      "title": "Working Hours",
+      "weekdays": "Monday - Friday",
+      "weekdays_hours": "09:00 - 18:00",
+      "saturday": "Saturday",
+      "saturday_hours": "10:00 - 16:00",
+      "sunday": "Sunday",
+      "sunday_hours": "Closed"
+    },
+    "made_with": {
+      "prefix": "Made with",
+      "suffix": "for families"
+    }
   },
   "theme": {
     "light": "Light",

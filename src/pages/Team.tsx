@@ -9,28 +9,28 @@ const Team = () => {
 
   const teamMembers = [
     {
-      name: 'Dr. [Name]',
-      role: 'Chief Reproductive Endocrinologist',
-      experience: '15+ years',
-      specialization: 'IVF & Reproductive Medicine',
+      nameKey: 'team.members.lead.name',
+      roleKey: 'team.members.lead.role',
+      experienceKey: 'team.members.lead.experience',
+      specializationKey: 'team.members.lead.specialization',
     },
     {
-      name: 'Dr. [Name]',
-      role: 'Senior Embryologist',
-      experience: '12+ years',
-      specialization: 'Embryology & Laboratory',
+      nameKey: 'team.members.embryologist.name',
+      roleKey: 'team.members.embryologist.role',
+      experienceKey: 'team.members.embryologist.experience',
+      specializationKey: 'team.members.embryologist.specialization',
     },
     {
-      name: 'Dr. [Name]',
-      role: 'Fertility Specialist',
-      experience: '10+ years',
-      specialization: 'Female Infertility',
+      nameKey: 'team.members.fertility.name',
+      roleKey: 'team.members.fertility.role',
+      experienceKey: 'team.members.fertility.experience',
+      specializationKey: 'team.members.fertility.specialization',
     },
     {
-      name: 'Dr. [Name]',
-      role: 'Andrologist',
-      experience: '8+ years',
-      specialization: 'Male Infertility',
+      nameKey: 'team.members.andrologist.name',
+      roleKey: 'team.members.andrologist.role',
+      experienceKey: 'team.members.andrologist.experience',
+      specializationKey: 'team.members.andrologist.specialization',
     },
   ];
 
@@ -58,7 +58,7 @@ const Team = () => {
       <SEO 
         title={t('team.title')}
         description={t('team.description')}
-        keywords="IVF doctors, fertility specialists, reproductive endocrinologists, Azerbaijan"
+          keywords={t('team.seo.keywords')}
       />
       <ParticlesBackground />
 
@@ -97,22 +97,22 @@ const Team = () => {
                 </div>
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">
-                {member.name}
+                  {t(member.nameKey)}
               </h3>
               <p className="text-sm text-gold-600 dark:text-gold-400 text-center mb-4">
-                {member.role}
+                {t(member.roleKey)}
               </p>
               <div className="space-y-2">
                 <div className="flex items-center space-x-2 text-sm">
                   <GraduationCap className="w-4 h-4 text-gold-500" />
                   <span className="text-gray-600 dark:text-gray-400">
-                    {member.specialization}
+                    {t(member.specializationKey)}
                   </span>
                 </div>
                 <div className="flex items-center space-x-2 text-sm">
                   <Heart className="w-4 h-4 text-gold-500" />
                   <span className="text-gray-600 dark:text-gray-400">
-                    {member.experience} experience
+                    {t(member.experienceKey)}
                   </span>
                 </div>
               </div>
@@ -130,12 +130,11 @@ const Team = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="card p-12 text-center"
         >
-          <h2 className="heading-3 mb-4">Join Our Team</h2>
+          <h2 className="heading-3 mb-4">{t('team.cta.title')}</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            We're always looking for talented professionals to join our mission
-            of helping families grow.
+            {t('team.cta.description')}
           </p>
-          <button className="btn-primary">View Open Positions</button>
+          <button className="btn-primary">{t('team.cta.button')}</button>
         </motion.div>
       </section>
     </div>

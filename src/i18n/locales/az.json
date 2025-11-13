@@ -10,17 +10,176 @@
     "subtitle": "Azərbaycanda ilk IVF klinikası",
     "description": "Biz sizin ailənizi yaratmaq arzunuzu gerçəyə çevirmək üçün buradayıq. Müasir texnologiyalar və peşəkar komanda ilə sizə xidmət edirik.",
     "cta": "Məsləhət alın",
-    "learn_more": "Ətraflı"
+    "learn_more": "Ətraflı",
+    "seo": {
+      "keywords": "IVF, sonsuzluğun müalicəsi, Azərbaycan, Genesis, reproduktiv tibb, infertillik"
+    },
+    "features": {
+      "technology": {
+        "title": "Müasir Texnologiyalar",
+        "description": "Ən son IVF avadanlıqları və texnologiyaları"
+      },
+      "care": {
+        "title": "Fərdi Yanaşma",
+        "description": "Hər bir pasiyent üçün fərdiləşdirilmiş dəstək"
+      },
+      "experts": {
+        "title": "Mütəxəssis Komanda",
+        "description": "Yüksək ixtisaslı reproduktiv həkimlər"
+      }
+    },
+    "cta_section": {
+      "title": "Səyahətinizə Başlamağa Hazırsınız?",
+      "description": "Ailənizi qurmaq üçün Azərbaycanın lider IVF klinikası ilə ilk addımı atın.",
+      "button": "Məsləhət üçün qeydiyyat"
+    }
   },
   "team": {
     "title": "Komandamız",
     "subtitle": "Peşəkar həkimlərimiz",
-    "description": "Yüksək ixtisaslı və təcrübəli mütəxəssislərimiz sizə ən yaxşı xidməti təqdim etmək üçün buradayıq."
+    "description": "Yüksək ixtisaslı və təcrübəli mütəxəssislərimiz sizə ən yaxşı xidməti təqdim etmək üçün buradayıq.",
+    "seo": {
+      "keywords": "IVF həkimləri, fertilite mütəxəssisləri, reproduktiv endokrinoloqlar, Azərbaycan"
+    },
+    "members": {
+      "lead": {
+        "name": "Dr. [Ad]",
+        "role": "Baş reproduktiv endokrinoloq",
+        "experience": "15+ illik təcrübə",
+        "specialization": "IVF və reproduktiv tibb"
+      },
+      "embryologist": {
+        "name": "Dr. [Ad]",
+        "role": "Baş embrioloq",
+        "experience": "12+ illik təcrübə",
+        "specialization": "Embriologiya və laboratoriya"
+      },
+      "fertility": {
+        "name": "Dr. [Ad]",
+        "role": "Fertilitə mütəxəssisi",
+        "experience": "10+ illik təcrübə",
+        "specialization": "Qadın sonsuzluğu"
+      },
+      "andrologist": {
+        "name": "Dr. [Ad]",
+        "role": "Androloq",
+        "experience": "8+ illik təcrübə",
+        "specialization": "Kişi sonsuzluğu"
+      }
+    },
+    "cta": {
+      "title": "Komandamıza Qoşulun",
+      "description": "Ailələrə kömək missiyamıza qoşulmaq üçün istedadlı mütəxəssisləri daim komandamızda görmək istəyirik.",
+      "button": "Vakansiyalara bax"
+    }
   },
   "services": {
     "title": "Xidmətlərimiz",
     "subtitle": "Təklif etdiyimiz müalicələr",
-    "description": "Biz ən müasir IVF texnologiyalarını və müalicə metodlarını təklif edirik."
+    "description": "Biz ən müasir IVF texnologiyalarını və müalicə metodlarını təklif edirik.",
+    "seo": {
+      "keywords": "IVF müalicəsi, ICSI, yumurta dondurma, sperma dondurma, genetik test, fertilite xidmətləri"
+    },
+    "items": {
+      "ivf": {
+        "title": "In Vitro Fertilizasiya (IVF)",
+        "description": "Ən yüksək uğur göstəricisi olan müasir IVF müalicəsi",
+        "features": [
+          "ICSI",
+          "Embriotransfer",
+          "Blastosit kultivasiyası"
+        ]
+      },
+      "pgt": {
+        "title": "Embrionöncəsi Genetik Diaqnostika",
+        "description": "Sağlam embrionlar üçün hərtərəfli genetik skrininq",
+        "features": [
+          "PGT-A",
+          "PGT-M",
+          "PGT-SR"
+        ]
+      },
+      "freezing": {
+        "title": "Yumurta və Sperma Dondurulması",
+        "description": "Gələcək ailə planlaması üçün fertilitenin qorunması",
+        "features": [
+          "Vitirifikasiya",
+          "Uzunmüddətli saxlanma",
+          "Yüksək müvəffəqiyyət faizi"
+        ]
+      },
+      "assessment": {
+        "title": "Fertilitənin Qiymətləndirilməsi",
+        "description": "Reproduktiv sağlamlığın dolğun qiymətləndirilməsi",
+        "features": [
+          "Hormon analizləri",
+          "Ultrasəs müayinəsi",
+          "Sperma analizi"
+        ]
+      },
+      "male": {
+        "title": "Kişi Sonsuzluğunun Müalicəsi",
+        "description": "Kişi faktorlu sonsuzluq üçün ixtisaslaşmış müalicə",
+        "features": [
+          "TESE",
+          "MESA",
+          "Sperma seçimi"
+        ]
+      },
+      "ovulation": {
+        "title": "Ovulyasiyanın Stimulyasiyası",
+        "description": "Nəzarətli yumurtalıq stimulyasiya protokolları",
+        "features": [
+          "IUI",
+          "Vaxtlaşdırılmış əlaqə",
+          "Dinamik izləmə"
+        ]
+      },
+      "donor": {
+        "title": "Donor Proqramları",
+        "description": "Yumurta və sperma donor xidmətləri",
+        "features": [
+          "Donorların skrininqi",
+          "Anonim donorluq",
+          "Hüquqi dəstək"
+        ]
+      },
+      "endometrial": {
+        "title": "Endometriumun Qəbulolma Qabiliyyəti",
+        "description": "Implantasiyanı optimallaşdırmaq üçün endometriumun hazırlanması",
+        "features": [
+          "ERA testi",
+          "Endometriumun stimulyasiyası",
+          "Sınaq dövrü"
+        ]
+      }
+    },
+    "process": {
+      "title": "Müalicə Prosesimiz",
+      "steps": [
+        {
+          "title": "İlkin məsləhət",
+          "description": "Mütəxəssislərimizlə tanışlıq"
+        },
+        {
+          "title": "Analiz və diaqnostika",
+          "description": "Hərtərəfli qiymətləndirmə"
+        },
+        {
+          "title": "Müalicə planı",
+          "description": "Fərdiləşdirilmiş protokol"
+        },
+        {
+          "title": "Nəzarət və dəstək",
+          "description": "Daimi müşayiət"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Səyahətinizə Bu Gün Başlayın",
+      "description": "Xidmətlərimiz və valideynlik arzunuza necə dəstək ola biləcəyimiz barədə daha çox öyrənmək üçün məsləhət alın.",
+      "button": "Qəbul üçün qeydiyyatdan keçin"
+    }
   },
   "about": {
     "title": "Haqqımızda",
@@ -29,14 +188,76 @@
     "mission_title": "Missiyamız",
     "mission_text": "Hər ailənin uşaq sahibi olma xoşbəxtliyini yaşaması üçün ən yüksək keyfiyyətli və peşəkar xidmət göstərmək.",
     "vision_title": "Vizyonumuz",
-    "vision_text": "Regionun aparıcı reproduktiv təbabət mərkəzi olmaq və beynəlxalq standartlara cavab vermək."
+    "vision_text": "Regionun aparıcı reproduktiv təbabət mərkəzi olmaq və beynəlxalq standartlara cavab vermək.",
+    "seo": {
+      "keywords": "Genesis haqqında, ilk IVF klinikası Azərbaycan, reproduktiv tibb mərkəzi"
+    },
+    "stats": {
+      "families": "Xoşbəxt ailə",
+      "experience": "İllik təcrübə",
+      "success": "Uğur faizi",
+      "procedures": "İcra olunmuş prosedurlar"
+    },
+    "values": {
+      "title": "Əsas Dəyərlərimiz",
+      "excellence": {
+        "title": "Mükəmməllik",
+        "description": "Reproduktiv təbabətdə ən yüksək standartları qoruyuruq"
+      },
+      "compassion": {
+        "title": "Mərhəmət",
+        "description": "Bu emosional səyahəti anlayır və empatik qayğı göstəririk"
+      },
+      "innovation": {
+        "title": "İnnovasiya",
+        "description": "Ən yeni texnologiya və metodları daim tətbiq edirik"
+      },
+      "integrity": {
+        "title": "Şəffaflıq",
+        "description": "Fəaliyyətimizi şəffaflıq və etik prinsiplərə əsasən qururuq"
+      }
+    },
+    "timeline": {
+      "title": "Səyahətimiz",
+      "entries": [
+        {
+          "title": "Yaranması",
+          "description": "Genesis Klinika Azərbaycanın ilk IVF klinikası kimi quruldu"
+        },
+        {
+          "title": "Genişlənmə",
+          "description": "Müasir laboratoriya imkanları istifadəyə verildi"
+        },
+        {
+          "title": "Yenilik",
+          "description": "İnkişaf etmiş genetik test xidmətləri tətbiq edildi"
+        },
+        {
+          "title": "Liderlik",
+          "description": "Regionun aparıcı reproduktiv mərkəzi kimi tanındı"
+        }
+      ]
+    }
   },
   "footer": {
     "rights": "Bütün hüquqlar qorunur",
     "contact": "Əlaqə",
     "address": "Ünvan",
     "phone": "Telefon",
-    "email": "E-poçt"
+    "email": "E-poçt",
+    "hours": {
+      "title": "İş saatları",
+      "weekdays": "Bazar ertəsi - Cümə",
+      "weekdays_hours": "09:00 - 18:00",
+      "saturday": "Şənbə",
+      "saturday_hours": "10:00 - 16:00",
+      "sunday": "Bazar",
+      "sunday_hours": "Bağlıdır"
+    },
+    "made_with": {
+      "prefix": "Sevgi ilə",
+      "suffix": "ailələr üçün"
+    }
   },
   "theme": {
     "light": "İşıqlı",

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, Moon, Sun, Globe } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
+import logo from '@/assets/logo.png';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,7 +72,7 @@ const Header = () => {
             onMouseEnter={() => setLogoRotation(prev => prev + 360)}
           >
             <img
-              src="/logo.png"
+              src={logo}
               alt="Genesis Clinic"
               className="h-12 w-12 object-contain transition-transform duration-500 group-hover:scale-110"
               style={{ transform: `rotate(${logoRotation}deg)` }}

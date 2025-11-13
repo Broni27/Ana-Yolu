@@ -8,28 +8,28 @@ const About = () => {
   const { t } = useTranslation();
 
   const stats = [
-    { icon: <Users className="w-8 h-8" />, value: '5,000+', label: 'Happy Families' },
-    { icon: <Award className="w-8 h-8" />, value: '15+', label: 'Years Experience' },
-    { icon: <TrendingUp className="w-8 h-8" />, value: '75%', label: 'Success Rate' },
-    { icon: <Heart className="w-8 h-8" />, value: '10,000+', label: 'Procedures' },
+    { icon: <Users className="w-8 h-8" />, value: '5,000+', labelKey: 'about.stats.families' },
+    { icon: <Award className="w-8 h-8" />, value: '15+', labelKey: 'about.stats.experience' },
+    { icon: <TrendingUp className="w-8 h-8" />, value: '75%', labelKey: 'about.stats.success' },
+    { icon: <Heart className="w-8 h-8" />, value: '10,000+', labelKey: 'about.stats.procedures' },
   ];
 
   const values = [
     {
-      title: 'Excellence',
-      description: 'We maintain the highest standards in reproductive medicine',
+      titleKey: 'about.values.excellence.title',
+      descriptionKey: 'about.values.excellence.description',
     },
     {
-      title: 'Compassion',
-      description: 'We understand the emotional journey and provide empathetic care',
+      titleKey: 'about.values.compassion.title',
+      descriptionKey: 'about.values.compassion.description',
     },
     {
-      title: 'Innovation',
-      description: 'We continuously adopt the latest technologies and techniques',
+      titleKey: 'about.values.innovation.title',
+      descriptionKey: 'about.values.innovation.description',
     },
     {
-      title: 'Integrity',
-      description: 'We operate with transparency and ethical principles',
+      titleKey: 'about.values.integrity.title',
+      descriptionKey: 'about.values.integrity.description',
     },
   ];
 
@@ -38,7 +38,7 @@ const About = () => {
       <SEO 
         title={t('about.title')}
         description={t('about.description')}
-        keywords="about Genesis, first IVF clinic Azerbaijan, reproductive medicine center"
+          keywords={t('about.seo.keywords')}
       />
       <ParticlesBackground />
 
@@ -74,7 +74,7 @@ const About = () => {
                 {stat.value}
               </div>
               <div className="text-sm text-gray-600 dark:text-gray-400">
-                {stat.label}
+                {t(stat.labelKey)}
               </div>
             </motion.div>
           ))}
@@ -126,7 +126,7 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="heading-2 text-center mb-12">Our Core Values</h2>
+          <h2 className="heading-2 text-center mb-12">{t('about.values.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
               <motion.div
@@ -139,10 +139,10 @@ const About = () => {
                 className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg"
               >
                 <h3 className="text-xl font-semibold text-gold-600 mb-3">
-                  {value.title}
+                  {t(value.titleKey)}
                 </h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {value.description}
+                  {t(value.descriptionKey)}
                 </p>
               </motion.div>
             ))}
@@ -158,13 +158,13 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <h2 className="heading-2 text-center mb-12">Our Journey</h2>
+          <h2 className="heading-2 text-center mb-12">{t('about.timeline.title')}</h2>
           <div className="max-w-3xl mx-auto">
             {[
-              { year: '2010', title: 'Founded', desc: 'Genesis Clinic was established as Azerbaijan\'s first IVF clinic' },
-              { year: '2015', title: 'Expansion', desc: 'Opened state-of-the-art laboratory facilities' },
-              { year: '2020', title: 'Innovation', desc: 'Introduced advanced genetic testing services' },
-              { year: '2025', title: 'Leadership', desc: 'Recognized as the leading reproductive center in the region' },
+              { year: '2010', titleKey: 'about.timeline.entries.0.title', descKey: 'about.timeline.entries.0.description' },
+              { year: '2015', titleKey: 'about.timeline.entries.1.title', descKey: 'about.timeline.entries.1.description' },
+              { year: '2020', titleKey: 'about.timeline.entries.2.title', descKey: 'about.timeline.entries.2.description' },
+              { year: '2025', titleKey: 'about.timeline.entries.3.title', descKey: 'about.timeline.entries.3.description' },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -179,8 +179,8 @@ const About = () => {
                 </div>
                 <div className="flex-shrink-0 w-4 h-4 rounded-full bg-gold-500 mr-8" />
                 <div className="flex-grow card p-6">
-                  <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{item.desc}</p>
+                  <h3 className="text-lg font-semibold mb-2">{t(item.titleKey)}</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">{t(item.descKey)}</p>
                 </div>
               </motion.div>
             ))}

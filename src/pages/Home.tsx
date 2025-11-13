@@ -4,6 +4,7 @@ import { ArrowRight, Sparkles, Heart, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Background3D from '@/components/Background3D';
 import SEO from '@/components/SEO';
+import logo from '@/assets/logo.png';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -11,18 +12,18 @@ const Home = () => {
   const features = [
     {
       icon: <Sparkles className="w-8 h-8" />,
-      title: 'Modern Technology',
-      description: 'State-of-the-art IVF technology and equipment',
+      titleKey: 'home.features.technology.title',
+      descriptionKey: 'home.features.technology.description',
     },
     {
       icon: <Heart className="w-8 h-8" />,
-      title: 'Personalized Care',
-      description: 'Individual approach to each patient',
+      titleKey: 'home.features.care.title',
+      descriptionKey: 'home.features.care.description',
     },
     {
       icon: <Award className="w-8 h-8" />,
-      title: 'Expert Team',
-      description: 'Highly qualified specialists',
+      titleKey: 'home.features.experts.title',
+      descriptionKey: 'home.features.experts.description',
     },
   ];
 
@@ -50,7 +51,7 @@ const Home = () => {
       <SEO 
         title={t('home.title')}
         description={t('home.description')}
-        keywords="IVF, fertility treatment, Azerbaijan, Genesis, reproductive medicine, infertility"
+        keywords={t('home.seo.keywords')}
       />
       <Background3D />
       
@@ -59,7 +60,7 @@ const Home = () => {
         <div className="text-center z-10 px-4">
           <div className="mb-6 fade-in">
             <img
-              src="/logo.png"
+              src={logo}
               alt="Genesis Clinic"
               className="w-32 h-32 mx-auto object-contain animate-float"
             />
@@ -119,9 +120,9 @@ const Home = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold-100 dark:bg-gold-900/20 text-gold-600 mb-4">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+              <h3 className="text-xl font-semibold mb-3">{t(feature.titleKey)}</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                {feature.description}
+                {t(feature.descriptionKey)}
               </p>
             </motion.div>
           ))}
@@ -137,13 +138,12 @@ const Home = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="heading-2 mb-6">Ready to Start Your Journey?</h2>
+          <h2 className="heading-2 mb-6">{t('home.cta_section.title')}</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            Take the first step towards building your family with Azerbaijan's
-            leading IVF clinic.
+            {t('home.cta_section.description')}
           </p>
           <button className="btn-primary">
-            Schedule a Consultation
+            {t('home.cta_section.button')}
           </button>
         </motion.div>
       </section>

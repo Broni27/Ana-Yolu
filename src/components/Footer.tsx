@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Heart } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -18,7 +19,7 @@ const Footer = () => {
           >
             <div className="flex items-center space-x-3 mb-4">
               <img
-                src="/logo.png"
+                src={logo}
                 alt="Genesis Clinic"
                 className="h-12 w-12 object-contain"
               />
@@ -79,20 +80,20 @@ const Footer = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h4 className="text-lg font-semibold mb-4 text-gold-500">
-              Working Hours
+              {t('footer.hours.title')}
             </h4>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-gray-400">Monday - Friday</span>
-                <span className="text-white">09:00 - 18:00</span>
+                <span className="text-gray-400">{t('footer.hours.weekdays')}</span>
+                <span className="text-white">{t('footer.hours.weekdays_hours')}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-400">Saturday</span>
-                <span className="text-white">10:00 - 16:00</span>
+                <span className="text-gray-400">{t('footer.hours.saturday')}</span>
+                <span className="text-white">{t('footer.hours.saturday_hours')}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-400">Sunday</span>
-                <span className="text-white">Closed</span>
+                <span className="text-gray-400">{t('footer.hours.sunday')}</span>
+                <span className="text-white">{t('footer.hours.sunday_hours')}</span>
               </div>
             </div>
           </motion.div>
@@ -110,9 +111,9 @@ const Footer = () => {
             © {new Date().getFullYear()} Genesis Clinic. {t('footer.rights')}.
           </p>
           <div className="flex items-center space-x-1 mt-4 sm:mt-0">
-            <span className="text-sm text-gray-400">Made with</span>
+            <span className="text-sm text-gray-400">{t('footer.made_with.prefix')}</span>
             <Heart className="w-4 h-4 text-red-500 fill-current animate-pulse" />
-            <span className="text-sm text-gray-400">for families</span>
+            <span className="text-sm text-gray-400">{t('footer.made_with.suffix')}</span>
           </div>
         </motion.div>
       </div>

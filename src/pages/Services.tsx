@@ -19,51 +19,83 @@ const Services = () => {
   const services = [
     {
       icon: <TestTube className="w-8 h-8" />,
-      title: 'In Vitro Fertilization (IVF)',
-      description: 'Advanced IVF treatment with the latest technology and highest success rates',
-      features: ['ICSI', 'Embryo Transfer', 'Blastocyst Culture'],
+      titleKey: 'services.items.ivf.title',
+      descriptionKey: 'services.items.ivf.description',
+      featuresKeys: [
+        'services.items.ivf.features.0',
+        'services.items.ivf.features.1',
+        'services.items.ivf.features.2',
+      ],
     },
     {
       icon: <Microscope className="w-8 h-8" />,
-      title: 'Preimplantation Genetic Testing',
-      description: 'Comprehensive genetic screening for healthy embryos',
-      features: ['PGT-A', 'PGT-M', 'PGT-SR'],
+      titleKey: 'services.items.pgt.title',
+      descriptionKey: 'services.items.pgt.description',
+      featuresKeys: [
+        'services.items.pgt.features.0',
+        'services.items.pgt.features.1',
+        'services.items.pgt.features.2',
+      ],
     },
     {
       icon: <Dna className="w-8 h-8" />,
-      title: 'Egg & Sperm Freezing',
-      description: 'Fertility preservation for your future family planning',
-      features: ['Vitrification', 'Long-term Storage', 'High Success Rate'],
+      titleKey: 'services.items.freezing.title',
+      descriptionKey: 'services.items.freezing.description',
+      featuresKeys: [
+        'services.items.freezing.features.0',
+        'services.items.freezing.features.1',
+        'services.items.freezing.features.2',
+      ],
     },
     {
       icon: <Activity className="w-8 h-8" />,
-      title: 'Fertility Assessment',
-      description: 'Comprehensive evaluation of reproductive health',
-      features: ['Hormone Testing', 'Ultrasound', 'Semen Analysis'],
+      titleKey: 'services.items.assessment.title',
+      descriptionKey: 'services.items.assessment.description',
+      featuresKeys: [
+        'services.items.assessment.features.0',
+        'services.items.assessment.features.1',
+        'services.items.assessment.features.2',
+      ],
     },
     {
       icon: <Stethoscope className="w-8 h-8" />,
-      title: 'Male Infertility Treatment',
-      description: 'Specialized treatment for male factor infertility',
-      features: ['TESE', 'MESA', 'Sperm Selection'],
+      titleKey: 'services.items.male.title',
+      descriptionKey: 'services.items.male.description',
+      featuresKeys: [
+        'services.items.male.features.0',
+        'services.items.male.features.1',
+        'services.items.male.features.2',
+      ],
     },
     {
       icon: <HeartPulse className="w-8 h-8" />,
-      title: 'Ovulation Induction',
-      description: 'Controlled ovarian stimulation protocols',
-      features: ['IUI', 'Timed Intercourse', 'Monitoring'],
+      titleKey: 'services.items.ovulation.title',
+      descriptionKey: 'services.items.ovulation.description',
+      featuresKeys: [
+        'services.items.ovulation.features.0',
+        'services.items.ovulation.features.1',
+        'services.items.ovulation.features.2',
+      ],
     },
     {
       icon: <Baby className="w-8 h-8" />,
-      title: 'Donor Programs',
-      description: 'Egg and sperm donor services',
-      features: ['Donor Screening', 'Anonymous Donation', 'Legal Support'],
+      titleKey: 'services.items.donor.title',
+      descriptionKey: 'services.items.donor.description',
+      featuresKeys: [
+        'services.items.donor.features.0',
+        'services.items.donor.features.1',
+        'services.items.donor.features.2',
+      ],
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
-      title: 'Endometrial Receptivity',
-      description: 'Optimizing uterine lining for implantation',
-      features: ['ERA Test', 'Endometrial Scratch', 'Mock Cycle'],
+      titleKey: 'services.items.endometrial.title',
+      descriptionKey: 'services.items.endometrial.description',
+      featuresKeys: [
+        'services.items.endometrial.features.0',
+        'services.items.endometrial.features.1',
+        'services.items.endometrial.features.2',
+      ],
     },
   ];
 
@@ -91,7 +123,7 @@ const Services = () => {
       <SEO 
         title={t('services.title')}
         description={t('services.description')}
-        keywords="IVF treatment, ICSI, egg freezing, sperm freezing, genetic testing, fertility services"
+        keywords={t('services.seo.keywords')}
       />
       <Background3D />
 
@@ -127,18 +159,18 @@ const Services = () => {
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gold-100 dark:bg-gold-900/20 text-gold-600 mb-4">
                 {service.icon}
               </div>
-              <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
+              <h3 className="text-lg font-semibold mb-2">{t(service.titleKey)}</h3>
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 flex-grow">
-                {service.description}
+                {t(service.descriptionKey)}
               </p>
               <ul className="space-y-1">
-                {service.features.map((feature, fIndex) => (
+                {service.featuresKeys.map((featureKey, fIndex) => (
                   <li
                     key={fIndex}
                     className="text-xs text-gray-500 dark:text-gray-500 flex items-center"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-gold-500 mr-2" />
-                    {feature}
+                    {t(featureKey)}
                   </li>
                 ))}
               </ul>
@@ -156,13 +188,13 @@ const Services = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center"
         >
-          <h2 className="heading-2 mb-12">Our Treatment Process</h2>
+          <h2 className="heading-2 mb-12">{t('services.process.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
-              { step: '1', title: 'Initial Consultation', desc: 'Meet with our specialists' },
-              { step: '2', title: 'Testing & Diagnosis', desc: 'Comprehensive evaluation' },
-              { step: '3', title: 'Treatment Plan', desc: 'Personalized protocol' },
-              { step: '4', title: 'Follow-up Care', desc: 'Continuous support' },
+              { step: '1', titleKey: 'services.process.steps.0.title', descKey: 'services.process.steps.0.description' },
+              { step: '2', titleKey: 'services.process.steps.1.title', descKey: 'services.process.steps.1.description' },
+              { step: '3', titleKey: 'services.process.steps.2.title', descKey: 'services.process.steps.2.description' },
+              { step: '4', titleKey: 'services.process.steps.3.title', descKey: 'services.process.steps.3.description' },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -175,8 +207,8 @@ const Services = () => {
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gold-500 text-white flex items-center justify-center text-2xl font-bold">
                   {item.step}
                 </div>
-                <h3 className="font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">{item.desc}</p>
+                <h3 className="font-semibold mb-2">{t(item.titleKey)}</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">{t(item.descKey)}</p>
               </motion.div>
             ))}
           </div>
@@ -192,12 +224,11 @@ const Services = () => {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="card p-12 text-center"
         >
-          <h2 className="heading-3 mb-4">Start Your Journey Today</h2>
+          <h2 className="heading-3 mb-4">{t('services.cta.title')}</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            Schedule a consultation to learn more about our services and how we
-            can help you achieve your dream of parenthood.
+            {t('services.cta.description')}
           </p>
-          <button className="btn-primary">Book Appointment</button>
+          <button className="btn-primary">{t('services.cta.button')}</button>
         </motion.div>
       </section>
     </div>
