@@ -12,7 +12,7 @@ import About from '@/pages/About';
 function App() {
   return (
     <ThemeProvider>
-      <Router>
+      <Router basename="/Ana-Yolu">
         <ScrollToTop />
         <div className="min-h-screen flex flex-col">
           <Header />

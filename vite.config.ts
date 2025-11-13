@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 export default defineConfig({
+  base: '/Ana-Yolu/',
   plugins: [react()],
   resolve: {
     alias: {
